@@ -1,9 +1,6 @@
 <template>
     <section>
-        <Navbar 
-            :logo=logo_route
-            :icon_form=icon_form_route
-        />
+        <Navbar :logo=logo_route :icon_form=icon_form_route />
     </section>
     <section class="container pt-4">
         <div class="bg-black bg-opacity-50 text-white rounded-4">
@@ -16,7 +13,8 @@
             texto="Desarrollar un videojuego en Scratch 3.0 con una mecánica clara e inspiración en juegos retro, promoviendo la creatividad, la lógica de programación y el diseño personal." />
 
         <Contenido titulo="Temática: Juegos Retro"
-            texto="Puedes elegir uno de los siguientes juegos como base para tu versión creativa:" :elements=datos />
+            texto="A continuacion te compartimos algunos ejemplos de juegos retro que pueden ser tomados en cuenta para tu idea:"
+            :elements=datos />
 
         <Contenido titulo="Requisitos del juego" texto="" :lista="lista" />
 
@@ -60,9 +58,9 @@ const datos = [
 
 const lista = [
     { id: 1, texto: 'Debe estar hecho en Scratch 3.0.', },
-    { id: 2, texto: 'Incluir una sola mecánica clara (ej: esquivar, atrapar, correr, saltar).', },
-    { id: 3, texto: 'Tener 2 niveles de dificultad o dificultad progresiva.', },
-    { id: 4, texto: 'Permitir que el estudiante modifique o cree sus propios diseños (personajes, fondos, obstáculos).', },
-    { id: 5, texto: 'Diseños deben ser apropiados y no ofensivos.', },
+    { id: 2, texto: 'Como minimo se debe poder identificar una mecanica clara. (ej: esquivar, atrapar, correr, saltar, etc. ', },
+    { id: 3, texto: 'Como minimo, debe tener 2 niveles de dificultad o dificultad progresiva (aumenta la dificultad cada vez que el juego avanza)', },
+    { id: 4, texto: 'El estudiando debe crear o modificar los disenos de sus propios personajes, fondos y escenarios.', },
+    { id: 5, texto: 'Los diseños deben ser adecuados para todo público y no contener contenido ofensivo, violento o discriminatorio.', },
 ]
 </script>

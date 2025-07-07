@@ -14,7 +14,7 @@
                     <Elementos v-for="element in elements" :key="element.id" :titulo="element.titulo"
                         :texto="element.texto" :video="element.video" />
                 </div>
-                <div v-if="lista && lista.length" class="text-start">
+                <div v-if="lista && lista.length" class="w-100 d-flex justify-content-center">
                     <div class="text-start text-content">
                         <ol>
                             <li v-for="item in lista" :key="item.id">
