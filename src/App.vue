@@ -1,6 +1,6 @@
 <template>
     <section>
-        <Navbar :logo=logo_route :icon_form=icon_form_route />
+        <Navbar :logo=logo_route :icono="icon_form_route" />
     </section>
     <section class="container pt-4">
         <div class="bg-black bg-opacity-50 text-white rounded-4">

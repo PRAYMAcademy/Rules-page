@@ -5,16 +5,21 @@
                 <img class="icon" :src="logo" alt="logo">
             </div>
         </div>
-        <SubsButton icon_form="src/assets/icons/archivo.png"/>
+        <SubsButton :icon_form=icono />
     </nav>
 </template>
 
 <script setup>
 import SubsButton from './SubsButton.vue';
-defineProps({
+
+const props = defineProps({
     logo: {
         type: String,
         required: true
+    },
+    icono: {
+        type: String,
+        required: false
     }
 })
 </script>
