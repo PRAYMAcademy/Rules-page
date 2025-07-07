@@ -1,6 +1,9 @@
 <template>
     <section>
-        <Navbar logo="public/icons/logo.webp" icon_form="public/icons/archivo.png" />
+        <Navbar 
+            :logo=logo_route
+            :icon_form=icon_form_route
+        />
     </section>
     <section class="container pt-4">
         <div class="bg-black bg-opacity-50 text-white rounded-4">
@@ -18,7 +21,7 @@
         <Contenido titulo="Requisitos del juego" texto="" :lista="lista" />
 
         <div class="w-100 mt-3">
-            <SubsButton icon_form="public/icons/archivo.png" />
+            <SubsButton :icon_form=icon_form_route />
         </div>
     </section>
     <section class="pt-4">
@@ -33,6 +36,9 @@ import Navbar from '@/components/Navbar.vue'
 import Footer from '@/components/Footer.vue'
 import Hero from '@/components/Hero.vue'
 import SubsButton from '@/components/SubsButton.vue'
+
+import icon_form_route from '@/assets/icons/archivo.png'
+import logo_route from '@/assets/icons/PRAYM-logo.png'
 
 const datos = [
     {
