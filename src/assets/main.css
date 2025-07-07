@@ -1,0 +1,68 @@
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+15&family=Jersey+20&display=swap');
+
+*{
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+
+    font-family: "Jersey 20", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p, li{
+    font-size: 1.4rem;
+    text-align: left;
+}
+
+body {
+    background-image: url('icons/pexels-bg.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+nav {
+    height: 10%;
+
+    .icon {
+            width: auto;
+            height: 3rem;   }
+    
+    .icon-form{
+        width: auto;
+        height: 1.4rem;
+    }
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+}
+
+.box{
+    width: 30%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-content{
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+    .box{
+        width: 100%;
+    }
+
+    .text-content{
+        width: 100%;
+    }
+}
