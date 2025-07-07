@@ -17,11 +17,12 @@ p, li{
 }
 
 body {
-    background-image: url('icons/pexels-bg.webp');
+    background-image: url('public/icons/pexels-bg.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+    
 }
 
 nav {

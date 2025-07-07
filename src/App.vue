@@ -1,9 +1,6 @@
 <template>
     <section>
-        <Navbar 
-            logo="/src/assets/icons/logo.webp" 
-            icon_form="src/assets/icons/archivo.png" 
-        />
+        <Navbar logo="public/icons/logo.webp" icon_form="public/icons/archivo.png" />
     </section>
     <section class="container pt-4">
         <div class="bg-black bg-opacity-50 text-white rounded-4">
@@ -21,7 +18,7 @@
         <Contenido titulo="Requisitos del juego" texto="" :lista="lista" />
 
         <div class="w-100 mt-3">
-            <SubsButton icon_form="src/assets/icons/archivo.png" />
+            <SubsButton icon_form="public/icons/archivo.png" />
         </div>
     </section>
     <section class="pt-4">
