@@ -18,9 +18,7 @@
 
         <Contenido titulo="Requisitos del juego" texto="" :lista="lista" />
 
-        <div class="w-100 mt-3">
-            <SubsButton :icon_form=icon_form_route />
-        </div>
+        <Multilinea titulo="¡Manos a la obra!" :lista="informacion" :icono="icon_form_route" />
     </section>
     <section class="pt-4">
         <Footer />
@@ -34,6 +32,7 @@ import Navbar from '@/components/Navbar.vue'
 import Footer from '@/components/Footer.vue'
 import Hero from '@/components/Hero.vue'
 import SubsButton from '@/components/SubsButton.vue'
+import Multilinea from './components/Multilinea.vue'
 
 import icon_form_route from '@/assets/icons/archivo.png'
 import logo_route from '@/assets/icons/PRAYM-logo.png'
@@ -62,5 +61,11 @@ const lista = [
     { id: 3, texto: 'Como minimo, debe tener 2 niveles de dificultad o dificultad progresiva (aumenta la dificultad cada vez que el juego avanza)', },
     { id: 4, texto: 'El estudiando debe crear o modificar los disenos de sus propios personajes, fondos y escenarios.', },
     { id: 5, texto: 'Los diseños deben ser adecuados para todo público y no contener contenido ofensivo, violento o discriminatorio.', },
+]
+
+const informacion = [
+    { id: 1, texto: 'Tienes hasta finales de julio para crear tu juego.', },
+    { id: 2, texto: 'Recuerda: lo más importante es divertirse, aprender y crear algo propio.', },
+    { id: 3, texto: '¡Te esperamos en el reto Scratch Retro PRAYM!', },
 ]
 </script>
