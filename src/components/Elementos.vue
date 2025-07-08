@@ -20,35 +20,35 @@
 import { computed } from 'vue'
 
 const props = defineProps({
-    titulo: {
-        type: String,
-        required: true
-    },
-    video: {
-        type: String,
-        default: ''
-    },
-    texto: {
-        type: String,
-        default: ''
-    }
+    titulo: { type: String, required: true },
+    video: { type: String, default: '' },
+    texto: { type: String, default: '' },
+    inicio: { type: Number, default: 0 },     // en segundos
+    fin: { type: Number, default: 0 },        // en segundos (si 0, no se pone)
+    loop: { type: Boolean, default: true }
 })
 
-
-// Detectar si es un video de YouTube
 const isYouTube = computed(() =>
     props.video.includes('youtube.com') || props.video.includes('youtu.be')
 )
 
-// Convertir la URL de YouTube a formato embed
 const embedUrl = computed(() => {
+    let videoId = ''
+
     if (props.video.includes('watch?v=')) {
-        return props.video.replace('watch?v=', 'embed/')
+        videoId = props.video.split('watch?v=')[1].split('&')[0]
     } else if (props.video.includes('youtu.be')) {
-        const id = props.video.split('youtu.be/')[1]
-        return `https://www.youtube.com/embed/${id}`
+        videoId = props.video.split('youtu.be/')[1].split('?')[0]
     }
-    return props.video
+
+    const base = `https://www.youtube.com/embed/${videoId}`
+    const startParam = `start=${props.inicio}`
+    const endParam = props.fin ? `&end=${props.fin}` : ''
+    const autoplay = 'autoplay=0'
+    const loopParam = props.loop ? `&loop=1&playlist=${videoId}` : ''
+    const mute = '&mute=1' // opcional: evita que el autoplay sea bloqueado
+
+    return `${base}?${autoplay}&${startParam}${endParam}${loopParam}${mute}`
 })
 </script>
 

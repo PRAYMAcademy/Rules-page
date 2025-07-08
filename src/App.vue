@@ -13,7 +13,7 @@
             texto="Desarrollar un videojuego en Scratch 3.0 con una mecánica clara e inspiración en juegos retro, promoviendo la creatividad, la lógica de programación y el diseño personal." />
 
         <Contenido titulo="Temática: Juegos Retro"
-            texto="A continuacion te compartimos algunos ejemplos de juegos retro que pueden ser tomados en cuenta para tu idea:"
+            texto="A continuación te compartimos algunos ejemplos de juegos retro que pueden ser tomados en cuenta para tu idea:"
             :elements=datos />
 
         <Contenido titulo="Requisitos del juego" texto="" :lista="lista" />
@@ -39,27 +39,27 @@ import logo_route from '@/assets/icons/PRAYM-logo.png'
 
 const datos = [
     {
-        id: 1, titulo: 'Pong', texto: 'Evitar que la bola se salga de la pantalla.', video: 'https://youtu.be/Yruv7QUiOJA?si=JO-CQ1PFRix6cOUo',
+        id: 1, titulo: 'Pong', texto: 'Evitar que la bola se salga de la pantalla.', video: 'https://youtu.be/Yruv7QUiOJA?si=JO-CQ1PFRix6cOUo', inicio: 0, fin: 20
     },
     {
-        id: 2, titulo: 'Saltar Plataformas', texto: 'Saltar por las plataformas.', video: 'https://youtu.be/QVfkpZGOGBY?si=IxWFWwkLT-263c0e',
+        id: 2, titulo: 'Saltar Plataformas', texto: 'Saltar por las plataformas.', video: 'https://youtu.be/QVfkpZGOGBY?si=IxWFWwkLT-263c0e', inicio: 10, fin: 30
     },
     {
-        id: 3, titulo: 'Atrapa la Fruta', texto: 'Atrapa la fruta que aparece en la pantalla.', video: 'https://youtu.be/9XaRZ4WQ7d4?si=Iz7Yg2nZ4SfBcJtO',
+        id: 3, titulo: 'Atrapa la Fruta', texto: 'Atrapa la fruta que aparece en la pantalla.', video: 'https://youtu.be/31Cj7R6KQa0?si=6idrnyftNXtSmYAA', inicio: 0, fin: 21
     },
     {
-        id: 4, titulo: 'Saltar y Esquivar', texto: 'Saltar y esquivar a los enemigos.', video: 'https://youtu.be/9XaRZ4WQ7d4?si=Iz7Yg2nZ4SfBcJtO',
+        id: 4, titulo: 'Saltar y Esquivar', texto: 'Saltar y esquivar a los enemigos.', video: 'https://www.youtube.com/watch?v=KJkcNP4VkiM&list=RDKJkcNP4VkiM&start_radio=1', inicio: 21, fin: 40
     },
     {
-        id: 5, titulo: 'Carrera de Autos', texto: 'Carrera de autos con obstáculos.', video: 'https://youtu.be/9XaRZ4WQ7d4?si=Iz7Yg2nZ4SfBcJtO',
+        id: 5, titulo: 'Carrera de Autos', texto: 'Carrera de autos con obstáculos.', video: 'https://youtu.be/1YrIuey9Vms?si=ngytJDWxwPh9zSgn', inicio: 11, fin: 22
     }
 ]
 
 const lista = [
-    { id: 1, texto: 'Debe estar hecho en Scratch 3.0.', },
-    { id: 2, texto: 'Como minimo se debe poder identificar una mecanica clara. (ej: esquivar, atrapar, correr, saltar, etc. ', },
+    { id: 1, texto: 'El juego de estar desarrollado en Scratch 3.0.', },
+    { id: 2, texto: 'Como minimo se debe poder identificar una mecanica clara. (ej: esquivar, atrapar, correr, saltar, etc). ', },
     { id: 3, texto: 'Como minimo, debe tener 2 niveles de dificultad o dificultad progresiva (aumenta la dificultad cada vez que el juego avanza)', },
-    { id: 4, texto: 'El estudiando debe crear o modificar los disenos de sus propios personajes, fondos y escenarios.', },
+    { id: 4, texto: 'El estudiante debe crear o modificar los diseños de sus propios personajes, fondos y escenarios.', },
     { id: 5, texto: 'Los diseños deben ser adecuados para todo público y no contener contenido ofensivo, violento o discriminatorio.', },
 ]
 
