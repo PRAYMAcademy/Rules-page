@@ -1,7 +1,7 @@
 <template>
-    <div class="bg-black bg-opacity-50 text-white rounded-4">
+    <div class="bg-black bg-opacity-50 text-white rounded-4 mb-2">
         <div class="p-2 justify-content-center align-items-center text-center mt-3">
-            <div>
+            <div class="mb-3">
                 <div class="">
                     <h1 class="fw-bold text-decoration-underline">{{ titulo }}</h1>
                 </div>
@@ -22,7 +22,6 @@
                             </li>
                         </ol>
                     </div>
-
                 </div>
 
             </div>
