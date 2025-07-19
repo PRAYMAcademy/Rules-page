@@ -56,11 +56,17 @@ const datos = [
 ]
 
 const lista = [
-    { id: 1, texto: 'El juego de estar desarrollado en Scratch 3.0.', },
-    { id: 2, texto: 'Como minimo se debe poder identificar una mecanica clara. (ej: esquivar, atrapar, correr, saltar, etc). ', },
-    { id: 3, texto: 'Como minimo, debe tener 2 niveles de dificultad o dificultad progresiva (aumenta la dificultad cada vez que el juego avanza)', },
+    { id: 1, texto: 'El juego debe estar desarrollado en Scratch 3.0.', },
+    { id: 2, texto: 'Como mínimo se debe poder identificar una mecánica clara. (ej: esquivar, atrapar, correr, saltar, etc).', },
+    { id: 3, texto: 'Como mínimo, debe tener 2 niveles de dificultad o dificultad progresiva (aumenta la dificultad cada vez que el juego avanza).', },
     { id: 4, texto: 'El estudiante debe crear o modificar los diseños de sus propios personajes, fondos y escenarios.', },
     { id: 5, texto: 'Los diseños deben ser adecuados para todo público y no contener contenido ofensivo, violento o discriminatorio.', },
+    { id: 6, texto: 'El juego debe incluir sonidos o música de fondo para crear una experiencia más inmersiva.', },
+    { id: 7, texto: 'Debe tener un sistema de puntuación visible que motive al jugador a mejorar.', },
+    { id: 8, texto: 'El juego debe ser muy claro e intuitivo para que otros puedan jugarlo fácilmente.', },
+    { id: 9, texto: 'Los gráficos deben tener estilo pixel art o simple, coherente con la estética retro.', },
+    { id: 10, texto: 'Debe incluir una pantalla de "You Win" personalizada al conseguir la puntuación máxima.', },
+    { id: 11, texto: 'Debe incluir una pantalla de "Game Over" personalizada cuando el jugador pierda.', },
 ]
 
 const informacion = [
