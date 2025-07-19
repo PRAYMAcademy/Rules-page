@@ -68,7 +68,7 @@ const lista = [
     { id: 10, texto: 'El juego debe estar optimizado para jugarse en pantalla completa y no debe tener errores visibles al ejecutar', },
     { id: 11, texto: 'Debe incluir una pantalla de "You Win / Tenemos Ganador" personalizada al conseguir la puntuación máxima.', },
     { id: 12, texto: 'Debe incluir una pantalla de "Game Over / Perdiste" personalizada cuando el jugador pierda.', },
-    { id: 13, texto: 'Los videojuegos deben ser entregados antes de la fecha establecida (2 de agosto de 2023).', },
+    { id: 13, texto: 'Los videojuegos deben ser entregados antes de la fecha establecida (2 de agosto de 2025).', },
     { id: 14, texto: 'El videojuego debe estar publicado en la carpeta de drive asignada a cada participante.', },
     { id: 15, texto: 'El juego debe permitir al jugador interactuar durante al menos 60 segundos.', },
     { id: 16, texto: 'El participante debebrá desarrollar una presentación oral de un maximo de 10 minutos en la cual expondrá el desarollo y uso del videojuego.', },
@@ -78,7 +78,7 @@ const lista = [
 ]
 
 const informacion = [
-    { id: 1, texto: 'Tienes hasta el 2 de agosto para crear tu juego.', },
+    { id: 1, texto: 'Tienes hasta el 2 de agosto del 2025 para crear tu juego.', },
     { id: 2, texto: 'Recuerda: lo más importante es divertirse, aprender y crear algo propio.', },
     { id: 3, texto: '¡Te esperamos en el reto Scratch Retro PRAYM!', },
 ]
