@@ -3,7 +3,7 @@
         <Navbar :logo=logo_route :icono="icon_form_route" />
     </section>
     <section class="container pt-4">
-        <div class="bg-black bg-opacity-50 text-white rounded-4">
+        <div class="bg-black bg-opacity-75 text-white rounded-4">
             <Hero titulo="RETO DE VIDEOJUEGOS EN SCRATCH 3.0" />
         </div>
     </section>
@@ -19,6 +19,11 @@
         <Contenido titulo="Requisitos del juego" texto="" :lista="lista" />
 
         <Multilinea titulo="¡Manos a la obra!" :lista="informacion" :icono="icon_form_route" />
+
+        <Contenido titulo="Datos de importancia" texto="" :lista="importancia" />
+
+        <Contenido titulo="Dudas y consultas"
+            texto="Si tienes alguna duda o consulta, no dudes en contactarnos al 88176498 - Moisés Mendez." />
     </section>
     <section class="pt-4">
         <Footer />
@@ -81,5 +86,14 @@ const informacion = [
     { id: 1, texto: 'Tienes hasta el 2 de agosto del 2025 para crear tu juego.', },
     { id: 2, texto: 'Recuerda: lo más importante es divertirse, aprender y crear algo propio.', },
     { id: 3, texto: '¡Te esperamos en el reto Scratch Retro PRAYM!', },
+]
+
+const importancia = [
+    { id: 1, texto: 'Parqueo limitado.', },
+    { id: 2, texto: 'Los participantes contarán con alimetación.', },
+    { id: 3, texto: 'Se les recuerda a los padre de familia que es un evento recreativo con el fin de fomentar la sana competencia y contribuir en la mejora de habilidades blandas.', },
+    { id: 4, texto: 'Se les recuerda a los padre de familia, conversar con sus hijos que un puesto no nos define, solo nos da las alas para aprender y mejorar continuamente.', },
+    { id: 5, texto: 'Se les insta a apoyar el proceso educativo de sus hijos al incluir a familiares y amigos al evento.', },
+    { id: 6, texto: 'Importante: Al ser un evento familiar y educativo, la vestimenta debe ser acorde a la actividad.', },
 ]
 </script>

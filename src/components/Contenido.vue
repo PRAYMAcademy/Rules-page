@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-black bg-opacity-50 text-white rounded-4 mb-2">
+    <div class="bg-black bg-opacity-75 text-white rounded-4 mb-2">
         <div class="p-2 justify-content-center align-items-center text-center mt-3">
             <div class="mb-3">
                 <div class="">
