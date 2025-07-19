@@ -18,12 +18,12 @@
 
         <Contenido titulo="Requisitos del juego" texto="" :lista="lista" />
 
-        <Multilinea titulo="¡Manos a la obra!" :lista="informacion" :icono="icon_form_route" />
-
         <Contenido titulo="Datos de importancia" texto="" :lista="importancia" />
 
         <Contenido titulo="Dudas y consultas"
             texto="Si tienes alguna duda o consulta, no dudes en contactarnos al 88176498 - Moisés Mendez." />
+
+        <Multilinea titulo="¡Manos a la obra!" :lista="informacion" :icono="icon_form_route" />
     </section>
     <section class="pt-4">
         <Footer />
