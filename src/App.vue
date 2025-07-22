@@ -25,9 +25,9 @@
 
         <Multilinea titulo="¡Manos a la obra!" :lista="informacion" :icono="icon_form_route" />
     </section>
-    <section class="pt-4">
+    <!-- <section class="pt-4">
         <Footer />
-    </section>
+    </section> -->
 
 </template>
 
