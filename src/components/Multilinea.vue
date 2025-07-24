@@ -11,7 +11,9 @@
                     </div>
                 </div>
                 <div class="pt-1 pb-3">
-                    <SubsButton :icon_form=icono />
+                    <SubsButton
+                        link="https://docs.google.com/forms/d/e/1FAIpQLSd1-NvvZcdlqukBblog2wMygB-xj8p7VzM9QADWkeVWbMQeAQ/viewform?usp=header"
+                        texto="Registarse" :icon_form=icono />
                 </div>
             </div>
         </div>

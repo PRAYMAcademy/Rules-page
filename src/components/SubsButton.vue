@@ -1,10 +1,8 @@
 <template>
     <div class="pe-3 d-flex justify-content-center align-items-center">
-        <a class="btn btn-primary align-items-center d-flex gap-2"
-            href="https://docs.google.com/forms/d/e/1FAIpQLSd1-NvvZcdlqukBblog2wMygB-xj8p7VzM9QADWkeVWbMQeAQ/viewform?usp=header"
-            target="_blank">
+        <a class="btn btn-primary align-items-center d-flex gap-2 fs-4" :href="link" target="_blank">
             <img class="icon-form" :src="icon_form" alt="">
-            Registrarse</a>
+            {{ texto }}</a>
     </div>
 </template>
 
@@ -13,6 +11,14 @@ defineProps({
     icon_form: {
         type: String,
         required: false
+    },
+    texto: {
+        type: String,
+        required: true
+    },
+    link: {
+        type: String,
+        required: true
     }
 })
 </script>

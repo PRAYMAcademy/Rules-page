@@ -5,7 +5,9 @@
                 <img class="icon" :src="logo" alt="logo">
             </div>
         </div>
-        <SubsButton :icon_form=icono />
+        <SubsButton
+            link="https://docs.google.com/forms/d/e/1FAIpQLSd1-NvvZcdlqukBblog2wMygB-xj8p7VzM9QADWkeVWbMQeAQ/viewform?usp=header"
+            texto="Registarse" :icon_form=icono />
     </nav>
 </template>
 

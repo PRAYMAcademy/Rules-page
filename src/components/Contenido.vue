@@ -12,7 +12,8 @@
                 </div>
                 <div v-if="elements && elements.length" class="d-flex flex-wrap gap-3 justify-content-center">
                     <Elementos v-for="element in elements" :key="element.id" :titulo="element.titulo"
-                        :texto="element.texto" :video="element.video" :inicio=element.inicio :fin=element.fin :loop="false" />
+                        :texto="element.texto" :video="element.video" :inicio=element.inicio :fin=element.fin
+                        :loop="false" />
                 </div>
                 <div v-if="lista && lista.length" class="w-100 d-flex justify-content-center">
                     <div class="text-start text-content">
@@ -23,7 +24,9 @@
                         </ol>
                     </div>
                 </div>
-
+                <div v-if="$slots.default" class="pt-3">
+                    <slot></slot>
+                </div>
             </div>
         </div>
     </div>

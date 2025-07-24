@@ -18,11 +18,16 @@
 
         <Contenido titulo="Requisitos del juego" texto="" :lista="lista" />
 
+        <Contenido titulo="Rubrica de evaluación" texto="Esta es la rubrica de evaluación que se usará para calificar a los participantes durante el reto.">
+            <SubsButton link="src\assets\test.pdf" texto="Rubrica" :icon_form=icon_form_route />
+        </Contenido>
+
         <Contenido titulo="Datos de importancia" texto="" :lista="importancia" />
+
+        <HowToArrive />
 
         <Contenido titulo="Dudas y consultas"
             texto="Si tienes alguna duda o consulta, no dudes en contactarnos al 88176498 - Moisés Mendez." />
-        <HowToArrive />
 
         <Multilinea titulo="¡Manos a la obra!" :lista="informacion" :icono="icon_form_route" />
     </section>
@@ -40,6 +45,7 @@ import Footer from '@/components/Footer.vue'
 import Hero from '@/components/Hero.vue'
 import Multilinea from './components/Multilinea.vue'
 import HowToArrive from './components/HowToArrive.vue'
+import SubsButton from '@/components/SubsButton.vue';
 
 import icon_form_route from '@/assets/icons/archivo.png'
 import logo_route from '@/assets/icons/PRAYM-logo.png'
