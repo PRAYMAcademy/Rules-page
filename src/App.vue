@@ -22,12 +22,14 @@
 
         <Contenido titulo="Dudas y consultas"
             texto="Si tienes alguna duda o consulta, no dudes en contactarnos al 88176498 - Moisés Mendez." />
+        <HowToArrive />
 
         <Multilinea titulo="¡Manos a la obra!" :lista="informacion" :icono="icon_form_route" />
     </section>
-    <!-- <section class="pt-4">
+
+    <section class="pt-4">
         <Footer />
-    </section> -->
+    </section>
 
 </template>
 
@@ -36,8 +38,8 @@ import Contenido from '@/components/Contenido.vue'
 import Navbar from '@/components/Navbar.vue'
 import Footer from '@/components/Footer.vue'
 import Hero from '@/components/Hero.vue'
-import SubsButton from '@/components/SubsButton.vue'
 import Multilinea from './components/Multilinea.vue'
+import HowToArrive from './components/HowToArrive.vue'
 
 import icon_form_route from '@/assets/icons/archivo.png'
 import logo_route from '@/assets/icons/PRAYM-logo.png'

@@ -1,7 +1,6 @@
-@import '@fortawesome/fontawesome-free/css/all.min.css';
 @import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+15&family=Jersey+20&display=swap');
 
-*{
+* {
     max-width: 100%;
     margin: 0;
     padding: 0;
@@ -11,7 +10,8 @@
     font-style: normal;
 }
 
-p, li{
+p,
+li {
     font-size: 1.4rem;
     text-align: left;
 }
@@ -29,23 +29,24 @@ nav {
     height: 10%;
 
     .icon {
-            width: auto;
-            height: 3rem;   }
-    
-    .icon-form{
+        width: auto;
+        height: 3rem;
+    }
+
+    .icon-form {
         width: auto;
         height: 1.4rem;
     }
 }
 
-footer{
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 6vh;
 }
 
-.box{
+.box {
     width: 30%;
     height: 300px;
     display: flex;
@@ -54,16 +55,33 @@ footer{
     flex-direction: column;
 }
 
-.text-content{
+.text-content {
     width: 70%;
 }
 
 @media (max-width: 768px) {
-    .box{
+    .box {
         width: 100%;
     }
 
-    .text-content{
+    .text-content {
         width: 100%;
     }
+}
+
+.mapa-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.mapa-container h3 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.mapa-wrapper {
+    margin-bottom: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

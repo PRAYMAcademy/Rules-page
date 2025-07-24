@@ -3,7 +3,7 @@
         <div class="p-2 justify-content-center align-items-center text-center mt-3">
             <div>
                 <div class="">
-                    <h1 class="fw-bold text-decoration-underline">{{ titulo }}</h1>
+                    <h2 class="fw-bold text-decoration-underline">{{ titulo }}</h2>
                 </div>
                 <div v-if="lista && lista.length" class="w-100 d-flex justify-content-center">
                     <div class="text-start text-content">
