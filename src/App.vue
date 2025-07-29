@@ -16,9 +16,14 @@
             texto="A continuación te compartimos algunos ejemplos de juegos retro que pueden ser tomados en cuenta para tu idea:"
             :elements=datos />
 
-        <Contenido titulo="Requisitos del juego" texto="" :lista="lista" />
+        <Contenido titulo="Requisitos del juego" texto="" :lista="reglas" />
 
-        <Contenido titulo="Rubrica de evaluación" texto="Esta es la rubrica de evaluación que se usará para calificar a los participantes durante el reto.">
+        <Contenido titulo="Cronograma de la actividad" texto="">
+            <img src="..\src\assets\icons\cronograma.jpg" alt="" srcset="">
+        </Contenido>
+
+        <Contenido titulo="Rubrica de evaluación"
+            texto="Esta es la rubrica de evaluación que se usará para calificar a los participantes durante el reto.">
             <SubsButton link="src\assets\test.pdf" texto="Rubrica" :icon_form=icon_form_route />
         </Contenido>
 
@@ -68,7 +73,7 @@ const datos = [
     }
 ]
 
-const lista = [
+const reglas = [
     { id: 1, texto: 'El juego debe estar desarrollado en Scratch 3.0.', },
     { id: 2, texto: 'Como mínimo se debe poder identificar una mecánica clara. (ej: esquivar, atrapar, correr, saltar, etc).', },
     { id: 3, texto: 'El proyecto debe tener un título creativo y una descripción breve que explique su objetivo.', },
